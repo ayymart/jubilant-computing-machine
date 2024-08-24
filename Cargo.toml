@@ -1,0 +1,13 @@
+[package]
+name = "tracing-subscriber-example"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+opentelemetry = "0.24.0"
+opentelemetry-otlp = { version = "0.17.0", features = ["http-json"] }
+opentelemetry_sdk = { version = "0.24.1", features = ["rt-tokio"] }
+tokio = { version = "1.37.0", features = ["full"] }
+tracing = "0.1.40"
+tracing-opentelemetry = "0.25.0"
+tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
